@@ -50,6 +50,11 @@ The VPS will reboot into NixOS, with existing files in the root filesystem moved
 You can delete the directory to save space.
 When rebuilding, include `./nixos.nix` in your NixOS configuration.
 
+## Tested Providers
+
+- [Gullo's Hosting](https://hosting.gullo.me)
+- [Inception Hosting](https://inceptionhosting.com)
+
 ## FAQ
 
 ### Why is this needed?
