@@ -17,6 +17,7 @@ let
   '';
 in {
   boot.isContainer = true;
+  boot.loader.initScript.enable = true;
   boot.specialFileSystems."/run/keys".fsType = lib.mkForce "tmpfs";
 
   boot.postBootCommands = ''
@@ -73,8 +74,6 @@ in {
 
   system.build.binBashWrapper = binBashWrapper;
   system.activationScripts.injectOpenVzScripts = lib.mkForce ''
-    mkdir -p /sbin
-    ln -sf $systemConfig/init /sbin/init
     ln -sf ${binBashWrapper} /bin/bash
     touch /fastboot
   '';
