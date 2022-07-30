@@ -73,7 +73,7 @@ in {
   networking.firewall.package = lib.mkDefault pkgs.iptables-legacy;
 
   system.build.binBashWrapper = binBashWrapper;
-  system.activationScripts.injectOpenVzScripts = lib.mkForce ''
+  system.activationScripts.injectOpenVzScripts = ''
     mkdir -p /sbin
     if [ ! -f /sbin/init ]; then
       ln -sf $systemConfig/init /sbin/init
