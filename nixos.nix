@@ -75,6 +75,9 @@ in {
   system.build.binBashWrapper = binBashWrapper;
   system.activationScripts.injectOpenVzScripts = lib.mkForce ''
     mkdir -p /sbin
+    if [ ! -f /sbin/init ]; then
+      ln -sf $systemConfig/init /sbin/init
+    fi
     ln -sf ${pkgs.quota}/bin/quotaon /sbin/quotaon
 
     ln -sf ${binBashWrapper} /bin/bash
