@@ -54,6 +54,7 @@ When rebuilding, include `./nixos.nix` in your NixOS configuration.
 
 - [Gullo's Hosting](https://hosting.gullo.me)
 - [Inception Hosting](https://inceptionhosting.com)
+- [EthernetServers](https://www.ethernetservers.com)
 
 ## FAQ
 
