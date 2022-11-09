@@ -56,6 +56,7 @@ When rebuilding, include `./nixos.nix` in your NixOS configuration.
 - [Inception Hosting](https://inceptionhosting.com)
 - [EthernetServers](https://www.ethernetservers.com)
 - [WebHorizon](https://webhorizon.in)
+- [STRATO](https://www.strato.de/)
 
 ## FAQ
 
